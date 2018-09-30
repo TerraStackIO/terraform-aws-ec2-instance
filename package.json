@@ -1,0 +1,10 @@
+{
+  "name": "@terrastack/terraform-aws-ec2-instance",
+  "version": "1.0.0",
+  "description": "Terraform module which creates EC2 instance(s) on AWS",
+  "main": ".terrastack/component/index.js",
+  "repository": "git@github.com:TerraStackIO/terraform-aws-ec2-instance.git",
+  "author": "Andreas Litt <andreas.litt@gmail.com>",
+  "license": "MPL-2.0",
+  "private": false
+}
