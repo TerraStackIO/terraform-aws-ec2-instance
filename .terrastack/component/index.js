@@ -1,24 +1,10 @@
 const path = require("path");
-/**
-  @typedef PropertiesHash
-  @type {object}
-  @description Sweet
- */
+const { BaseComponent } = require("terrastack");
 
-class Component {
-  /**
-   * @param  {} id
-   * @param  {...PropertiesHash} variables
-   */
-  constructor(id, variables) {
-    this.id = id;
-    this.variables = variables;
-    this.dependencies = [];
+class Component extends BaseComponent {
+  constructor() {
+    super(...arguments);
     this.sourceDir = path.join(__dirname, "../..");
-  }
-
-  dependsOn(component) {
-    this.dependencies.push(component);
   }
 }
 
